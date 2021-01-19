@@ -1,0 +1,25 @@
+.comic-item {
+  margin-bottom: 50px;
+  cursor: pointer;
+  padding: 0 11px;
+}
+
+.comic-item img {
+  width: 100%;
+  height: 336px;
+  object-fit: cover;
+  box-shadow: 0 10px 10px 0 rgba(46, 51, 51, 0.4);
+  transition: 0.3s all ease;
+}
+
+.comic-item img:hover {
+  transform: translate(0, -10px);
+}
+
+.comic-item > div > p:first-child {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  margin-top: 25px;
+  line-height: 16.8px;
+}

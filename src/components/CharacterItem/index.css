@@ -1,0 +1,102 @@
+.character-item {
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.character-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s all ease;
+  margin: 0 auto;
+}
+
+.character-item .content {
+  background-color: #151515;
+  height: 105px;
+  position: relative;
+  color: white;
+  padding: 16px 24px 17px 20px;
+  margin-top: 0px;
+  transition: 0.4s all ease;
+  z-index: 99;
+}
+
+.character-item > div:first-child {
+  width: 100%;
+  height: 205px;
+  overflow: hidden;
+}
+
+.character-item > div > p:first-child {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding-top: 2px;
+  padding-left: 3px;
+}
+
+.character-item:hover .red {
+  height: 100%;
+}
+
+.character-item:hover img {
+  transform: scale(1.08);
+}
+
+/* SPÉCIFIC STYLING */
+
+.character-item .bottom-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: white;
+  border-style: solid;
+  border-top-color: transparent;
+  border-width: 13px 13px 0 0;
+  z-index: 99;
+}
+
+.character-item .red {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 4px;
+  background-color: #ed1f21;
+  z-index: -1;
+  transition: 0.3s all ease;
+}
+
+
+
+.favorite {
+  background-color: transparent;
+  color: var(--white);
+  font-size: 30px;
+  line-height: 1;
+  padding: 10px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  text-shadow: 0 0 4px var(--dark);
+  cursor: pointer;
+  transition: all 100ms;
+}
+.favorite:hover {
+  color: var(--red);
+  font-size: 40px;
+  padding: 5px;
+  text-shadow: 0 0 1px var(--dark);
+}
+.favorite.active {
+  color: var(--red);
+}
